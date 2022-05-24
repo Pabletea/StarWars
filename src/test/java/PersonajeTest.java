@@ -14,7 +14,7 @@ public class PersonajeTest {
         // tip: es 10
     }
 
-    // TODO Haz la función en la clase Ejercicio6: obtenerMasPobladosQue(int poblacion)
+    // TODO Haz la función en la clase Ejercicio6: obtenerMasPobladosQue(long poblacion)
     //  nos devuelve una lista de aquellos planetas que tienen más población que el integer pasado por parámetro
     // TODO Haz todos los test que sean necesarios.
     // tip: Si el planeta tiene una población indeterminada, no debe mostrarse
