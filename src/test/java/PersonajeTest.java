@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class PersonajeTest {
@@ -12,6 +13,8 @@ public class PersonajeTest {
         // tip: ej.planets.obtenerTodos()
         // TODO comprueba que tu función devuelve el número correcto de elementos
         // tip: es 10
+
+        Assertions.assertEquals(10,ej.planets.obtenerTodos().length);
     }
 
     // TODO Haz la función en la clase Ejercicio6: obtenerMasPobladosQue(long poblacion)
@@ -19,12 +22,23 @@ public class PersonajeTest {
     // TODO Haz todos los test que sean necesarios.
     // tip: Si el planeta tiene una población indeterminada, no debe mostrarse
 
+    @Test
+    public void TestPoblacion(){
+        int out_esperado=5;
+        int out_real=ej.obtenerMasPobladosQue(6000000).length;
+        Assertions.assertEquals(out_esperado,out_real);
+        System.out.println("Test poblacion realizado");
+    }
+
+
 
     // TODO Haz la función en la clase Ejercicio6: obtenerPlanetasConTerreno(String terreno)
     //  nos devuelve una lista de aquellos planetas que tienen terrenos que se llamen como el string.
     // tip: Algunos terrenos disponibles: forests, mountains, hills, etc.
     // TODO Haz todos los test que sean necesarios.
     // tip: Si el planeta tiene una población indeterminada, no debe mostrarse
+
+
 
 
     // TODO Haz la función en la clase Ejercicio6: obtenerPlanetasResidentes(int residentes, String nombre)
